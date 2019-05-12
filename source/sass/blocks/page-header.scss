@@ -1,0 +1,26 @@
+.page-header__logo-wrapper {
+  display: flex;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  width: 87.5%;
+  margin: 0 auto;
+}
+
+.page-header__logo {
+  display: flex;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: 768px) {
+  .page-header__logo-image {
+    width: 174px;
+    height: 59px;
+  }
+}

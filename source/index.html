@@ -3,10 +3,39 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preload" href="fonts/oswald.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/oswaldbold.woff2" as="font" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+    <header class="page-header">
+      <div class="page-header__logo-wrapper">
+        <a href="index.html" class="page-header__logo">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img class="page-header__logo-image" src="img/logo-mobile.svg" alt="Логотип магазина Cat Energy" width="191" height="39">
+          </picture>
+        </a>
+      </div>
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <ul class="main-nav__list">
+          <li class="main-nav__list-item">
+            <a class="main-nav__list-link" href="index/index.html">Главная</a>
+          </li>
+          <li class="main-nav__list-item">
+            <a class="main-nav__list-link" href="index/index.html">Каталог продукции</a>
+          </li>
+          <li class="main-nav__list-item">
+            <a class="main-nav__list-link" href="index/index.html">Подбор программы</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
-
+    <script src="js/picturefill.min.js"></script>
+    <script src="js/menu.js"></script>
   </body>
 </html>
