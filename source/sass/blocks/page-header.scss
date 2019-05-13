@@ -19,8 +19,38 @@
 }
 
 @media (min-width: 768px) {
+  .page-header {
+    width: 92.5%;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+  }
+
   .page-header__logo-image {
     width: 174px;
     height: 59px;
+  }
+
+  .page-header__logo-wrapper {
+    width: auto;
+    margin: 0;
+    padding-top: 23px;
+    padding-bottom: 0;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 1300px) {
+  .page-header {
+    width: 1220px;
+  }
+
+  .page-header__logo-image {
+    width: 202px;
+    height: 59px;
+  }
+
+  .page-header__logo-wrapper {
+    padding-top: 54px;
   }
 }

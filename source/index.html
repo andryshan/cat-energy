@@ -23,17 +23,34 @@
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <ul class="main-nav__list">
           <li class="main-nav__list-item">
-            <a class="main-nav__list-link" href="index/index.html">Главная</a>
+            <a class="main-nav__list-link main-nav__list-link--active">Главная</a>
           </li>
           <li class="main-nav__list-item">
-            <a class="main-nav__list-link" href="index/index.html">Каталог продукции</a>
+            <a class="main-nav__list-link" href="index/catalog.html">Каталог продукции</a>
           </li>
           <li class="main-nav__list-item">
-            <a class="main-nav__list-link" href="index/index.html">Подбор программы</a>
+            <a class="main-nav__list-link" href="index/form.html">Подбор программы</a>
           </li>
         </ul>
       </nav>
     </header>
+    <main class="page-main">
+      <section class="promotion">
+        <h1 class="promotion__title">Функциональное питание для котов</h1>
+        <p class="promotion__text">Занялся собой? Займись котом!</p>
+        <div class="promotion__product">
+          <picture>
+            <source type="image/webp" media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.webp 1x, img/index-can-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/index-can-tablet@1x.webp 1x, img/index-can-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/index-can-mobile@1x.webp 1x, img/index-can-mobile@2x.webp 2x">
+            <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png, img/index-can-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg 1x, img/index-can-tablet@2x.jpg 2x">
+            <img src="img/index-can-mobile@1x.png" alt="Cat Energy - курица" width="280" height="270" srcset="img/index-can-mobile@2x.png 2x">
+          </picture>
+        </div>
+        <a class="promotion__button button" href="form.html">Подобрать программу</a>
+      </section>
+    </main>
 
     <script src="js/picturefill.min.js"></script>
     <script src="js/menu.js"></script>

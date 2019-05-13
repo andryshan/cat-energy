@@ -1,0 +1,44 @@
+.promotion {
+  background-image: url("../../img/index-background-mobile@1x.jpg"), linear-gradient(to bottom, #63a73a 306px, transparent 306px);
+  background-repeat: no-repeat;
+  background-position: center 0;
+}
+
+.promotion__title {
+  display: flex;
+  color: #ffffff;
+  margin: 0 auto;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  text-align: center;
+  width: 80%;
+  justify-content: center;
+  padding-top: 28px;
+}
+
+.promotion__text {
+  display: flex;
+  color: #ffffff;
+  margin: 0 auto;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  text-align: center;
+  width: 80%;
+  justify-content: center;
+  text-transform: uppercase;
+  padding-top: 25px;
+}
+
+.promotion__product {
+  display: flex;
+  justify-content: center;
+  padding-top: 28px;
+}
+
+.promotion__button {
+  width: 87%;
+  margin: 0 auto;
+  padding: 11px 0;
+}
