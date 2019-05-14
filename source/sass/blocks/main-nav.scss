@@ -110,6 +110,12 @@
     width: 62.3%;
   }
 
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .main-nav {
+      width: 64.3%;
+    }
+  }
+
   .main-nav__list-item:first-child .main-nav__list-link {
     border-top: none;
   }
@@ -162,7 +168,6 @@
 
   .main-nav__list {
     justify-content: flex-end;
-    background-color: #64a83b;
   }
 
   .main-nav__list-item:not(:first-child) {
