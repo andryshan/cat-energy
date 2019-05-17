@@ -1,0 +1,145 @@
+.example {
+  background-color: #f2f2f2;
+}
+
+.example__wrapper {
+  width: 87.5%;
+  margin: 0 auto;
+}
+
+.example__title {
+  font-size: 36px;
+  line-height: 60px;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 17px;
+  padding-bottom: 17px;
+}
+
+.example__description {
+  margin-top: 0;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  margin-bottom: 20px;
+}
+
+.example__specifications {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.example__amount {
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+  padding-top: 12px;
+  border: 1px solid grey;
+  border-radius: 3px;
+  padding-bottom: 17px;
+}
+
+.example__done {
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 12px;
+  text-transform: lowercase;
+  text-align: center;
+  align-self: center;
+  background-color: #f2f2f2;
+  width: 82px;
+  transform: translateY(-8px);
+}
+
+.example__feature {
+  width: 44%;
+  flex-direction: column;
+  display: flex;
+}
+
+.example__cost {
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  padding-top: 9px;
+  text-align: center;
+  padding-bottom: 9px;
+}
+
+.example-slider__item {
+  display: flex;
+  justify-content: center;
+  padding-top: 24px;
+}
+
+.example-slider__item--hidden {
+  display: none;
+}
+
+.example-slider__controls {
+  display: flex;
+  justify-content: center;
+  padding-top: 33px;
+  align-items: flex-start;
+}
+
+.example-slider__label {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.example-slider__range {
+  position: relative;
+  width: 84px;
+  margin: 2px 18px 0;
+}
+
+.example-slider__scale {
+  background-color: white;
+  border: 1px solid #cdcdcd;
+  height: 12px;
+  border-radius: 5px;
+}
+
+.example-slider__button {
+  border: none;
+  background-color: #68b738;
+  width: 35px;
+  height: 6px;
+  border-radius: 5px;
+  position: absolute;
+  top: 4px;
+  left: 5px;
+}
+
+.example-slider__item picture {
+  display: flex;
+}
+
+.example-slider__before:checked ~ .example-slider__item--before {
+  display: flex;
+}
+
+.example-slider__after:checked ~ .example-slider__item--after {
+  display: flex;
+}
+
+.example-slider__before:checked ~ .example-slider__controls .example-slider__button {
+  left: 5px;
+}
+
+.example-slider__after:checked ~ .example-slider__controls .example-slider__button {
+  left: 44px;
+}
