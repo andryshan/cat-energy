@@ -244,7 +244,7 @@
     overflow: hidden;
     padding-bottom: 109px;
     background-image: linear-gradient(to bottom, #ffffff, #ffffff 209px, #f2f2f2 209px, #f2f2f2);
-    transition: all 0.3s ease-in-out;
+    transition: width 0.3s ease-in-out;
   }
 
   .example-slider__items::after {
