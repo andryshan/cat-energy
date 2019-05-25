@@ -41,12 +41,91 @@
       <section class="form">
         <div class="form__wrapper-title">
           <h1 class="form__title">Подбор программы</h1>
-          <div class="form__filters filters" method="get" action="https://echo.htmlacademy.ru">
-            <div class="filters__field filters__field--review">
-
+        </div>
+        <form class="form__filters filters" method="get" action="https://echo.htmlacademy.ru">
+          <div class="filters__field filters__field-review">
+            <p class="filters__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
+            <div class="filters__list">
+              <label class="filters__option">
+                <span class="filters__value">Имя:*</span>
+                <input type="text" class="filters__input" placeholder="Барсик" name="name" required>
+              </label>
+              <label class="filters__option">
+                <span class="filters__value">Вес (кг):*</span>
+                <input type="number" class="filters__input" placeholder="7" name="weight" required>
+              </label>
+              <label class="filters__option">
+                <span class="filters__value">Возраст (лет):</span>
+                <input type="number" class="filters__input" placeholder="7" name="age">
+              </label>
             </div>
           </div>
-        </div>
+
+          <div class="filters__field filters__field-programm">
+            <div class="filters__list">
+              <label class="filters__option">
+                <input type="radio" class="filters__input filters__input--radio visually-hidden" name="choice" checked value="lose">
+                <span class="filters__value">Похудение</span>
+              </label>
+              <label class="filters__option">
+                <input type="radio" class="filters__input filters__input--radio visually-hidden" name="choice" value="up-weight">
+                <span class="filters__value">Набор массы</span>
+              </label>
+              <label class="filters__option">
+                <input type="radio" class="filters__input filters__input--radio visually-hidden" name="choice" value="question">
+                <span class="filters__value">Не знаю (Нужен ваш совет)</span>
+              </label>
+            </div>
+          </div>
+          <div class="filters__field filters__field-contacts">
+            <h3 class="filters__field-legend">Контактные данные (владельца кота)</h3>
+            <div class="filters__list">
+              <label class="filters__option">
+                <span class="filters__char-title">E-mail:*</span>
+                <input type="tel" class="filters__input filters__input--phone" placeholder="8 (960) 900-60-90" name="phone" required="">
+              </label>
+              <label class="filters__option">
+                <span class="filters__char-title">Телефон:*</span>
+                <input type="email" class="filters__input filters__input--email" placeholder="kuklachev@gmail.com" name="email" required="">
+              </label>
+            </div>
+          </div>
+
+          <div class="filters__field filters__field-comment">
+            <div class="filters__list">
+              <label class="filters__option">
+                <span class="filters__field-legend">Комментарий</span>
+                <textarea class="filters__input filters__input--area" name="add" placeholder="Расскажите обо всех повадках кота"></textarea>
+              </label>
+            </div>
+          </div>
+
+          <div class="filters__field filters__field-extra">
+            <h3 class="filters__field-legend">Дополнительно</h3>
+            <div class="filters__list">
+              <label class="filters__option">
+                <input type="checkbox" class="filters__input filters__input--checkbox" name="sugar">
+                <span class="filters__value">Сахарозаменитель</span>
+              </label>
+              <label class="filters__option">
+                <input type="checkbox" class="filters__input filters__input--checkbox" name="water">
+                <span class="filters__value">Питьевая вода</span>
+              </label>
+              <label class="filters__option">
+                <input type="checkbox" class="filters__input filters__input--checkbox" name="milk">
+                <span class="filters__value">Молоко</span>
+              </label>
+              <label class="filters__option">
+                <input type="checkbox" class="filters__input filters__input--checkbox" name="vitamins">
+                <span class="filters__value">Витамины</span>
+              </label>
+            </div>
+          </div>
+          <div class="form__wrapper-bottom">
+            <button type="button" class="button form__button">Отправить заявку</button>
+            <p class="form__desc">* — Обязательные поля</p>
+          </div>
+        </form>
       </section>
     </main>
     <footer class="page-footer">
