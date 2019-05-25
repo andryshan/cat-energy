@@ -12,7 +12,7 @@
     <div style="display:none">
       <include src="build/img/sprite.svg"></include>
     </div>
-    <header class="page-header">
+    <header class="page-header page-header--catalog">
       <div class="page-header__logo-wrapper">
         <a href="index.html" class="page-header__logo">
           <picture>
@@ -291,44 +291,46 @@
       <section class="more-products">
         <div class="more-products__wrapper">
           <h2 class="more-products__title">Дополнительные товары</h2>
-          <ul class="more-products__list">
-            <li class="more-products__item">
-              <h3 class="more-products__item-title">Сахарозаменитель</h3>
-              <div class="more-products__wrapper-desc">
-                <p class="more-products__weight">1 упаковка (100 г)</p>
-                <p class="more-products__price">200 Р.</p>
-              </div>
-              <a href="#" class="button more-products__button" aria-label="Заказать">Заказать</a>
-            </li>
-            <li class="more-products__item">
-              <h3 class="more-products__item-title">Питьевая вода</h3>
-              <div class="more-products__wrapper-desc">
-                <p class="more-products__weight">5 литров</p>
-                <p class="more-products__price">50 Р.</p>
-              </div>
-              <a href="#" class="button more-products__button" aria-label="Заказать">Заказать</a>
-            </li>
-            <li class="more-products__item">
-              <h3 class="more-products__item-title">Молоко</h3>
-              <div class="more-products__wrapper-desc">
-                <p class="more-products__weight">1 литр</p>
-                <p class="more-products__price">100 Р.</p>
-              </div>
-              <a href="#" class="button more-products__button" aria-label="Заказать">Заказать</a>
-            </li>
-            <li class="more-products__item">
-              <h3 class="more-products__item-title">Витамины</h3>
-              <div class="more-products__wrapper-desc">
-                <p class="more-products__weight">1 упаковка (30 г)</p>
-                <p class="more-products__price">300 Р.</p>
-              </div>
-              <a href="#" class="button more-products__button" aria-label="Заказать">Заказать</a>
-            </li>
-          </ul>
-          <div class="more-products__promo">
-            <a href="#" class="more-products__promo-link">
-              <h3 class="more-products__promo-title">Закажите все и&nbsp;получите чехол для кота в подарок!</h3>
-            </a>
+          <div class="more-products--desktop">
+            <ul class="more-products__list">
+              <li class="more-products__item">
+                <h3 class="more-products__item-title">Сахарозаменитель</h3>
+                <div class="more-products__wrapper-desc">
+                  <p class="more-products__weight">1 упаковка (100 г)</p>
+                  <p class="more-products__price">200 Р.</p>
+                </div>
+                <a href="#" class="button more-products__button" aria-label="Заказать">Заказать</a>
+              </li>
+              <li class="more-products__item">
+                <h3 class="more-products__item-title">Питьевая вода</h3>
+                <div class="more-products__wrapper-desc">
+                  <p class="more-products__weight">5 литров</p>
+                  <p class="more-products__price">50 Р.</p>
+                </div>
+                <a href="#" class="button more-products__button" aria-label="Заказать">Заказать</a>
+              </li>
+              <li class="more-products__item">
+                <h3 class="more-products__item-title">Молоко</h3>
+                <div class="more-products__wrapper-desc">
+                  <p class="more-products__weight">1 литр</p>
+                  <p class="more-products__price">100 Р.</p>
+                </div>
+                <a href="#" class="button more-products__button" aria-label="Заказать">Заказать</a>
+              </li>
+              <li class="more-products__item">
+                <h3 class="more-products__item-title">Витамины</h3>
+                <div class="more-products__wrapper-desc">
+                  <p class="more-products__weight">1 упаковка (30 г)</p>
+                  <p class="more-products__price">300 Р.</p>
+                </div>
+                <a href="#" class="button more-products__button" aria-label="Заказать">Заказать</a>
+              </li>
+            </ul>
+            <div class="more-products__promo">
+              <a href="#" class="more-products__promo-link">
+                <h3 class="more-products__promo-title">Закажите все и&nbsp;получите чехол для кота в подарок!</h3>
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -399,6 +401,6 @@
       </div>
     </footer>
     <script src="js/picturefill.min.js"></script>
-    <script src="js/menu.js"></script>
+    <script src="js/app.js"></script>
   </body>
 </html>

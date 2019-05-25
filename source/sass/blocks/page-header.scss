@@ -53,4 +53,12 @@
   .page-header__logo-wrapper {
     padding-top: 54px;
   }
+
+  .page-header--catalog .main-nav__list-link {
+    color: black;
+  }
+
+  .page-header--catalog .main-nav__list-link--active::after {
+    background-color: #68b738;
+  }
 }
