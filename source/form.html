@@ -82,11 +82,17 @@
             <div class="filters__list">
               <label class="filters__option">
                 <span class="filters__value filters__char-title">E-mail:*</span>
-                <input type="tel" class="filters__input filters__input--phone" placeholder="kuklachev@gmail.com" name="phone" required="">
+                <input type="tel" class="filters__input filters__input--email" placeholder="kuklachev@gmail.com" name="phone" required="">
+                <svg class="filters__icon-email" width="17" height="13" focusable="false">
+                  <use xlink:href="#icon-mail"></use>
+                </svg>
               </label>
               <label class="filters__option">
                 <span class="filters__value filters__char-title">Телефон:*</span>
-                <input type="email" class="filters__input filters__input--email" placeholder="8 (960) 900-60-90" name="email" required="">
+                <input type="email" class="filters__input filters__input--phone" placeholder="8 (960) 900-60-90" name="email" required="">
+                <svg class="filters__icon-phone" width="20" height="20" focusable="false">
+                  <use xlink:href="#icon-phone"></use>
+                </svg>
               </label>
             </div>
           </div>
@@ -95,7 +101,9 @@
             <div class="filters__list">
               <label class="filters__option">
                 <span class="filters__value filters__field-legend">Комментарий</span>
-                <textarea class="filters__input filters__input--area" name="add" placeholder="Расскажите обо всех повадках кота"></textarea>
+                <span class="filters__wrapper-comment">
+                  <textarea class="filters__input filters__input--area" name="add" placeholder="Расскажите обо всех повадках кота"></textarea>
+                </span>
               </label>
             </div>
           </div>
@@ -126,6 +134,29 @@
             <p class="form__desc">* — Обязательные поля</p>
           </div>
         </form>
+      </section>
+      <section class="contacts">
+        <h2 class="visually-hidden">Карта и контакты</h2>
+        <div class="contacts__wrapper">
+          <div class="contacts__wrapper-description">
+            <p class="contacts__invite">приглашаем к&nbsp;сотрудничеству дилеров!</p>
+            <p class="contacts__adress">
+              <span class="contacts__adress-adress">ул. Большая Конюшенная, д. 19/8</span>
+              <span class="contacts__adress-city">Санкт-Петербург</span>
+            </p>
+          </div>
+          <div class="contacts__map">
+            <iframe class="contacts__map-frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603625300316!2d30.320858716173465!3d59.93871916905408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1558355405577!5m2!1sru!2sru" width="320" height="363" allowfullscreen></iframe>
+            <picture>
+              <source type="image/webp" media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x">
+              <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
+              <img src="img/bg-map-mobile@1x.png" alt="Местоположение магазина" width="320" height="363" srcset="img/bg-map-mobile@2x.png 2x">
+            </picture>
+          </div>
+        </div>
       </section>
     </main>
     <footer class="page-footer">

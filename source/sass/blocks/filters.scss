@@ -46,6 +46,13 @@
   text-transform: uppercase;
 }
 
+.filters__input::-moz-placeholder {
+  font-size: 16px;
+  line-height: 18px;
+  color: #444444;
+  text-transform: uppercase;
+}
+
 .filters__field-legend {
   font-size: 24px;
   line-height: 24px;
@@ -86,6 +93,8 @@
   padding-top: 7px;
   padding-bottom: 7px;
   position: relative;
+  cursor: pointer;
+  user-select: none;
 }
 
 .filters__field-programm .filters__value::before {
@@ -124,6 +133,29 @@
 .filters__field-contacts .filters__list {
   width: auto;
   margin: 0 auto;
+}
+
+.filters__field-contacts .filters__option {
+  position: relative;
+}
+
+.filters__field-contacts .filters__icon-email {
+  content: "";
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+
+.filters__field-contacts .filters__icon-phone {
+  content: "";
+  position: absolute;
+  top: 14px;
+  right: 13px;
+}
+
+.filters__input--phone:focus ~ .filters__icon-phone,
+.filters__input--email:focus ~ .filters__icon-email {
+  fill: #68b738;
 }
 
 .filters__field-legend::before {
@@ -168,6 +200,8 @@
   padding-top: 7px;
   padding-bottom: 7px;
   position: relative;
+  cursor: pointer;
+  user-select: none;
 }
 
 .filters__field-extra .filters__option {
@@ -199,7 +233,166 @@
   left: -40px;
 }
 
-.form__wrapper-bottom {
-  width: 87.5%;
-  margin: 0 auto;
+.filters__input--checkbox:hover ~ .filters__value::before,
+.filters__input--radio:hover ~ .filters__value::before {
+  border-color: #bababa;
+}
+
+.filters__input--checkbox:active ~ .filters__value,
+.filters__input--radio:active ~ .filters__value {
+  opacity: 0.3;
+}
+
+.filters__wrapper-comment {
+  display: flex;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .filters__list {
+    width: 81.5%;
+  }
+
+  .filters__value {
+    font-size: 20px;
+    line-height: 20px;
+    padding-right: 16px;
+  }
+
+  .filters__input::-webkit-input-placeholder {
+    font-size: 20px;
+    line-height: 20px;
+    color: #444444;
+    text-transform: uppercase;
+  }
+
+  .filters__input::-moz-placeholder {
+    font-size: 20px;
+    line-height: 20px;
+    color: #444444;
+    text-transform: uppercase;
+  }
+
+  .filters__input {
+    padding: 10px 18px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @-moz-document url-prefix {
+    .filters__input {
+      padding: 15px 18px;
+    }
+  }
+
+  .filters__option {
+    margin-bottom: 20px;
+  }
+
+  .filters__field-review {
+    padding-bottom: 52px;
+  }
+
+  .filters__field-programm {
+    width: 81.5%;
+    margin: 0 auto;
+  }
+
+  .filters__field-programm .filters__list {
+    width: 91.5%;
+    padding-bottom: 16px;
+  }
+
+  .filters__field-programm .filters__value {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  .filters__field-programm .filters__option {
+    margin-bottom: 3px;
+    padding-left: 60px;
+  }
+
+  .filters__field-programm .filters__value::before {
+    width: 40px;
+    height: 40px;
+    top: 4px;
+    left: -60px;
+  }
+
+  .filters__input--radio:checked ~ .filters__value::after {
+    width: 18px;
+    height: 18px;
+    top: 16px;
+    left: -48px;
+  }
+
+  .filters__field-contacts .filters__field-legend {
+    width: 530px;
+    margin-bottom: 76px;
+    padding-left: 40px;
+  }
+
+  .filters__field-contacts {
+    width: 92.5%;
+    padding-top: 75px;
+  }
+
+  .filters__field-legend {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .filters__field-legend::before {
+    top: 22px;
+  }
+
+  .filters__field-contacts .filters__icon-email {
+    top: 20px;
+  }
+
+  .filters__field-contacts .filters__icon-phone {
+    top: 17px;
+  }
+
+  .filters__field-legend::after {
+    position: absolute;
+    content: "";
+    height: 3px;
+    width: 100vw;
+    top: 22px;
+    background-color: #68b738;
+    z-index: -1;
+    right: 0;
+  }
+
+  .filters__field-contacts .filters__list {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .filters__field-comment .filters__list {
+    width: 92.5%;
+  }
+
+  .filters__field-comment .filters__option {
+    margin-top: 45px;
+  }
+
+  .filters__field-comment .filters__field-legend {
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-bottom: 76px;
+  }
+
+  .filters__wrapper-comment {
+    padding-left: 40px;
+    padding-right: 40px;
+    box-sizing: border-box;
+  }
+
+  .filters__input--area {
+    min-height: 174px;
+    padding: 15px 18px;
+  }
 }
