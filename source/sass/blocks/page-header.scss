@@ -61,4 +61,12 @@
   .page-header--catalog .main-nav__list-link--active::after {
     background-color: #68b738;
   }
+
+  .page-header--catalog .main-nav__list-link:not(.main-nav__list-link--active):hover {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  .page-header--catalog .main-nav__list-link:not(.main-nav__list-link--active):active {
+    color: rgba(0, 0, 0, 0.3);
+  }
 }

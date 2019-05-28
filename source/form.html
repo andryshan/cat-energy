@@ -29,10 +29,10 @@
             <a class="main-nav__list-link" href="index.html">Главная</a>
           </li>
           <li class="main-nav__list-item">
-            <a class="main-nav__list-link">Каталог продукции</a>
+            <a class="main-nav__list-link" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="main-nav__list-item">
-            <a class="main-nav__list-link main-nav__list-link--active" href="form.html">Подбор программы</a>
+            <a class="main-nav__list-link main-nav__list-link--active">Подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -44,37 +44,38 @@
           <p class="form__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
         </div>
         <form class="form__filters filters" method="get" action="https://echo.htmlacademy.ru">
-          <div class="filters__field filters__field-review">
-            <div class="filters__list">
-              <label class="filters__option">
-                <span class="filters__value">Имя:*</span>
-                <input type="text" class="filters__input" placeholder="Барсик" name="name" required>
-              </label>
-              <label class="filters__option">
-                <span class="filters__value">Вес (кг):*</span>
-                <input type="number" class="filters__input" placeholder="7" name="weight" required>
-              </label>
-              <label class="filters__option">
-                <span class="filters__value">Возраст (лет):</span>
-                <input type="number" class="filters__input" placeholder="7" name="age">
-              </label>
+          <div class="filters__field-wrapper-top">
+            <div class="filters__field filters__field-review">
+              <div class="filters__list">
+                <label class="filters__option">
+                  <span class="filters__value">Имя:*</span>
+                  <input type="text" class="filters__input" placeholder="Барсик" name="name" required>
+                </label>
+                <label class="filters__option">
+                  <span class="filters__value">Вес (кг):*</span>
+                  <input type="number" class="filters__input" placeholder="7" name="weight" required>
+                </label>
+                <label class="filters__option">
+                  <span class="filters__value">Возраст (лет):</span>
+                  <input type="number" class="filters__input" placeholder="7" name="age">
+                </label>
+              </div>
             </div>
-          </div>
-
-          <div class="filters__field filters__field-programm">
-            <div class="filters__list">
-              <label class="filters__option">
-                <input type="radio" class="filters__input filters__input--radio visually-hidden" name="choice" checked value="lose">
-                <span class="filters__value">Похудение</span>
-              </label>
-              <label class="filters__option">
-                <input type="radio" class="filters__input filters__input--radio visually-hidden" name="choice" value="up-weight">
-                <span class="filters__value">Набор массы</span>
-              </label>
-              <label class="filters__option">
-                <input type="radio" class="filters__input filters__input--radio visually-hidden" name="choice" value="question">
-                <span class="filters__value">Не знаю (Нужен ваш совет)</span>
-              </label>
+            <div class="filters__field filters__field-programm">
+              <div class="filters__list">
+                <label class="filters__option">
+                  <input type="radio" class="filters__input filters__input--radio visually-hidden" name="choice" checked value="lose">
+                  <span class="filters__value">Похудение</span>
+                </label>
+                <label class="filters__option">
+                  <input type="radio" class="filters__input filters__input--radio visually-hidden" name="choice" value="up-weight">
+                  <span class="filters__value">Набор массы</span>
+                </label>
+                <label class="filters__option">
+                  <input type="radio" class="filters__input filters__input--radio visually-hidden" name="choice" value="question">
+                  <span class="filters__value">Не знаю (Нужен ваш совет)</span>
+                </label>
+              </div>
             </div>
           </div>
           <div class="filters__field filters__field-contacts">
@@ -107,7 +108,6 @@
               </label>
             </div>
           </div>
-
           <div class="filters__field filters__field-extra">
             <h3 class="filters__field-legend">Дополнительно</h3>
             <div class="filters__list">

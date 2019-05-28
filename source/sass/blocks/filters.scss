@@ -234,7 +234,9 @@
 }
 
 .filters__input--checkbox:hover ~ .filters__value::before,
-.filters__input--radio:hover ~ .filters__value::before {
+.filters__input--radio:hover ~ .filters__value::before,
+.filters__input--checkbox:focus ~ .filters__value::before,
+.filters__input--radio:focus ~ .filters__value::before {
   border-color: #bababa;
 }
 
@@ -279,7 +281,7 @@
     line-height: 20px;
   }
 
-  @-moz-document url-prefix {
+  @-moz-document url-prefix("") {
     .filters__input {
       padding: 15px 18px;
     }
@@ -394,5 +396,109 @@
   .filters__input--area {
     min-height: 174px;
     padding: 15px 18px;
+  }
+
+  .filters__field-extra {
+    width: 92.5%;
+    margin-top: 45px;
+    margin-bottom: 28px;
+  }
+
+  .filters__field-extra .filters__field-legend {
+    padding-left: 40px;
+    padding-right: 42px;
+    margin-bottom: 51px;
+  }
+
+  .filters__field-extra .filters__list {
+    width: 88.5%;
+    margin: 0 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .filters__field-extra .filters__value {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  .filters__field-extra .filters__option {
+    padding-left: 58px;
+    width: 36%;
+    margin-bottom: 22px;
+  }
+
+  .filters__field-extra .filters__value::before {
+    width: 38px;
+    height: 38px;
+    top: 6px;
+    left: -58px;
+  }
+
+  .filters__input--checkbox:checked ~ .filters__value::after {
+    width: 22px;
+    height: 20px;
+    top: 17px;
+    left: -48px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .filters__field-wrapper-top {
+    display: flex;
+    justify-content: space-between;
+    width: 1220px;
+    margin: 0 auto;
+    align-items: flex-start;
+  }
+
+  .filters__field-programm {
+    width: 570px;
+    margin: 0;
+  }
+
+  .filters__field-review {
+    width: 570px;
+    padding-bottom: 0;
+  }
+
+  .filters__list {
+    width: auto;
+  }
+
+  .filters__field-contacts {
+    width: 1300px;
+    padding-top: 49px;
+    padding-bottom: 2px;
+  }
+
+  .filters__field-contacts .filters__option {
+    width: 570px;
+  }
+
+  .filters__field-contacts .filters__list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .filters__field-comment .filters__list {
+    width: 1300px;
+  }
+
+  .filters__field-extra {
+    width: 1300px;
+    margin-top: 47px;
+    margin-bottom: 35px;
+  }
+
+  .filters__field-extra .filters__list {
+    width: 1220px;
+  }
+
+  .filters__field-extra .filters__option {
+    width: 15.5%;
   }
 }
